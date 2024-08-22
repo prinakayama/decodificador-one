@@ -182,11 +182,26 @@ button.bt-copiar {
 
 footer {
     text-align: center;
-    color: #FFFFFF;
-    background: linear-gradient(var(--dark-blue-100), var(--dark-blue-200), var(--dark-blue-300));
+    background: linear-gradient(var(--gray-100), var(--gray-200), var(--gray-300));
     padding: 40px 0;
     display: block;
     height: auto;
+    align-items: center;
+    
+}
+
+.footer__texto{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.icone--texto{
+    margin: 0 8px;
 }
 
 .logo-link {
