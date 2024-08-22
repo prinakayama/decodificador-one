@@ -1,13 +1,13 @@
 <h1 align="center">
     
 <p align="center">
-<img src= ".assets/one" width="12%" height="15%"/>
-<img src= "https://www.pngwing.com/pt/free-png-anktk" width="15%" height="15%"/>
+<img src= "" width="12%" height="15%"/>
+<img src= "" width="15%" height="15%"/>
 
 <h1 align="center"><b>Estatística com Python</b></h1>
 
 
-<p align="center"> 
+<p align="center">
 
 Primeiro desafio Oracle One!! 
 
