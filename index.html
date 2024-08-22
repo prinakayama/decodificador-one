@@ -10,9 +10,59 @@
 </head>
 
 <body>
+    <header class="header"> 
+        <img src="assets/aluralogo.svg" alt="Logotipo Alura letra A">
+    </header>
 
-    <header class=""
+    <main class="main container">
+        <section>
+            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto___" ></textarea>
+            <div class="alert">
+                <img src="assets/warning.svg">
+                <span> Apenas letras minusculas e sem acento.</span>
+            </div>
+            <div class="bottom">
+                <button  class="encriptar" onclick="btnEncriptar()">Criptografia</button>
+                <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button> 
+            </div>
+        </section>
 
+        <section class="mensagem">
+            <div class="direita">
+                <div class="sem-retorno">
+                    <img src="assets/message.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada">
+                    <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <div class="texto-criptografado d-none">
+                    <p></p>
+                    <button class="bt-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        
+            <a target="_blank" href="https://www.linkedin.com/in/priscila-nakayma">
+                <img src="assets/linkedin_logo.svg" class="logo-link" alt="linkedin">
+            </a>
+            <a target="_blank" href="https://github.com/prinakayama">
+                <img src="assets/github_logo.svg" class="logo-link" alt="github">
+            </a>
+            <span class="footer__texto">
+                Feito com
+                <img class="icone icone--texto" alt="heart" src="assets/heart-filled.svg">
+                por Priscila Nakayama
+        </span>
+       
+    </footer>
+
+    <script src="app/criptografa-e-descriptografa.js"></script>
+    <script src="app/criptografo.js"></script>
+    <script src="app/copiar.js"></script>
+    <script src="app/text-area.js"></script>
     <script src="app/app.js"></script>
 </body>
 
