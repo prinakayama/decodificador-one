@@ -2,7 +2,7 @@
     
 <p align="center">
 <img src= ".assets/one" width="12%" height="15%"/>
-<img src= ".assets/ntt" width="15%" height="15%"/>
+<img src= "https://www.pngwing.com/pt/free-png-anktk" width="15%" height="15%"/>
 
 <h1 align="center"><b>Estatística com Python</b></h1>
 
