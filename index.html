@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador-One</title>
-    <link rel="stylesheet" href=".style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -14,14 +14,14 @@
         <img src="assets/aluralogo.svg" alt="Logotipo Alura letra A">
     </header>
 
-    <main class="main container">
+    <main class="main">
         <section>
             <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto___" ></textarea>
             <div class="alert">
                 <img src="assets/warning.svg">
                 <span> Apenas letras minusculas e sem acento.</span>
             </div>
-            <div class="bottom">
+            <div class="button">
                 <button  class="encriptar" onclick="btnEncriptar()">Criptografia</button>
                 <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button> 
             </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="texto-criptografado d-none">
                     <p></p>
-                    <button class="bt-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+                    <button class="copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
                 </div>
             </div>
             </div>
