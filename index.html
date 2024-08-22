@@ -7,39 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador-One</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="header"> 
-        <img src="assets/aluralogo.svg" alt="Logotipo Alura letra A">
+        <img class="logo_alura" src="assets/aluralogo.svg" alt="Logotipo Alura letra A">
     </header>
 
     <main class="main">
-        <section>
+        <section class="esquerda">
             <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto___" ></textarea>
             <div class="alert">
                 <img src="assets/warning.svg">
                 <span> Apenas letras minusculas e sem acento.</span>
             </div>
-            <div class="button">
+            <div class="botao">
                 <button  class="encriptar" onclick="btnEncriptar()">Criptografia</button>
                 <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button> 
             </div>
         </section>
 
-        <section class="mensagem">
-            <div class="direita">
-                <div class="sem-retorno">
+        <section class="direita">
+
+            <div class="mensagem">
+                <div class="sem_retorno">
                     <img src="assets/message.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada">
-                    <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada</h3>
+                    <h3 class="titulo_sem_retorno">Nenhuma mensagem encontrada</h3>
                     <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                 </div>
-                <div class="texto-criptografado d-none">
+
+                <div class="texto_cripto">
                     <p></p>
                     <button class="copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+                    <button class="colar" id="colar" onclick="colarTexto()">Voltar</button>
                 </div>
             </div>
-            </div>
+            
         </section>
     </main>
 
@@ -51,12 +57,12 @@
             <a target="_blank" href="https://github.com/prinakayama">
                 <img src="assets/github_logo.svg" class="logo-link" alt="github">
             </a>
-            <span class="footer__texto">
-                Feito com
+            <p>
+                Desenvolvido por
                 <img class="icone icone--texto" alt="heart" src="assets/heart-filled.svg">
-                por Priscila Nakayama
-        </span>
-       
+                Priscila Nakayama
+            </p>
+      
     </footer>
 
     <script src="app/criptografa-e-descriptografa.js"></script>

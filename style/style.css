@@ -23,7 +23,7 @@ body {
     background-color: var(--light-blue-100);
 }
 
-.main {
+.container {
     height: 100vh;
     max-height: 100vh;
     display: flex;
@@ -33,6 +33,11 @@ body {
     padding: 0 30px;
 }
 
+.esquerda {
+    width: 60%;
+    height: 100%;
+    padding-top: 40px;
+}
 
 .logo-alura:hover {
     height: 48px;
@@ -81,7 +86,7 @@ button {
     outline: none;
 }
 
-.alert {
+.alerta {
     font-family: 'Inter';
     font-size: 12px;
     color: var(--gray-400);
@@ -89,7 +94,7 @@ button {
     margin: 0 0 16px 8px;
 }
 
-.alert img {
+.alerta img {
     margin-bottom: -4px;
 }
 
@@ -193,3 +198,91 @@ footer {
     transform: scale(1.2);
     transition-duration: 0.5s;
 }
+
+/* Media query para telas de smartphone (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+      height: auto;
+      max-height: unset;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .esquerda {
+      width: 100%;
+    }
+  
+    .direita {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  
+    form {
+      padding-top: 20px;
+      padding-left: 0;
+    }
+  
+    form textarea {
+      height: 200px;
+    }
+  
+    .botoes {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    .texto-criptografado {
+      height: auto;
+    }
+  }
+  
+  /* Media query para telas de tablet (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .esquerda {
+      width: 60%;
+    }
+  
+    .direita {
+      width: 40%;
+    }
+  
+    form {
+      padding-top: 30px;
+    }
+  
+    form textarea {
+      height: 250px;
+    }
+  }
+  
+  /* Media query para telas de desktop (min-width: 1024px) */
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1130px;
+    }
+  
+    .esquerda {
+      width: 60%;
+    }
+  
+    .direita {
+      width: 40%;
+    }
+  
+    form {
+      padding-top: 60px;
+    }
+  
+    form textarea {
+      height: 300px;
+    }
+  }
