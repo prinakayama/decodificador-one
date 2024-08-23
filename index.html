@@ -7,60 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador-One</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+   
 </head>
 
 <body>
-    <header class="header"> 
+    <header> 
         <img class="logo_alura" src="assets/aluralogo.svg" alt="Logotipo Alura letra A">
     </header>
 
-    <main class="main_container">
-        <section class="esquerda">
-            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto___" ></textarea>
-            <div class="alert">
-                <img src="assets/warning.svg">
-                <span> Apenas letras minusculas e sem acento.</span>
-            </div>
-            <div class="botao">
-                <button  class="encriptar" onclick="btnEncriptar()">Criptografia</button>
-                <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button> 
+    <main class="main">
+        <section class="main_container_esq">
+            <div class="esquerda">
+                <form>
+                    <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto___" ></textarea>
+                        <span class="alert">
+                            <img src="assets/warning.svg" class="img-alerta">
+                            Apenas letras minúsculas e sem acento.
+                        </span>
+                        <div class="botao">
+                            <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
+                            <button class="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                        </div>
+                </form>   
             </div>
         </section>
 
-        <section class="direita">
-
+        <section class="main_container_dir">
             <div class="mensagem">
                 <div class="sem_retorno">
-                    <img src="assets/message.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada">
-                    <h3 class="titulo_sem_retorno">Nenhuma mensagem encontrada</h3>
+                    <img src="assets/message.svg" id="mensagem_nao_encontrada" alt="Nenhuma mensagem encontrada">
+                    <h3 class="titulo_nao_retorno">Nenhuma mensagem encontrada</h3>
                     <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                 </div>
-
                 <div class="texto_cripto">
-                    <p></p>
-                    <button class="copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
-                    <button class="colar" id="colar" onclick="colarTexto()">Voltar</button>
+                    <button class="copiar" onclick="copiarTexto()">Copiar</button>
+                    <button class="colar"  onclick="copiedText()" >Colar</button> 
                 </div>
-            </div>
-            
+            </div>   
         </section>
     </main>
 
     <footer class="footer">
         
             <a target="_blank" href="https://www.linkedin.com/in/priscila-nakayma">
-                <img src="assets/linkedin_logo.svg" class="logo-link" alt="linkedin">
+                <img src="assets/linkedin_logo.svg" class="logo_link" alt="linkedin">
             </a>
             <a target="_blank" href="https://github.com/prinakayama">
-                <img src="assets/github_logo.svg" class="logo-link" alt="github">
+                <img src="assets/github_logo.svg" class="logo_link" alt="github">
             </a>
             
             <span class="footer__texto">
                 Desenvolvido por
-                <img  src="assets/heart-filled.svg" class="logo-link" alt="heart">
+                <img  src="assets/heart-filled.svg" class="logo_link" alt="heart">
                 Priscila Nakayama 
             </span>
     </footer>
