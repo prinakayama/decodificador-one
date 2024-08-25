@@ -36,3 +36,5 @@ gaitober" => "gato"
 ### Extras:
 * Um botão que copie o texto criptografado/descriptografado para a área de transferência - ou seja, que tenha a mesma funcionalidade do ctrl+C ou da opção "copiar" do menu dos aplicativos.
 
+### Badge por ter concluído o Desafio
+<img src="https://github.com/user-attachments/assets/21df7b43-5ed1-457d-aed6-871490146fe2" width="25%" height="25%"/>
