@@ -11,43 +11,43 @@
 </head>
 
 <body>
-    <header> 
-        <img class="logo_alura" src="assets/aluralogo.svg" alt="Logotipo Alura letra A">
-    </header>
 
-    <main class="main">
-        <section class="main_container_esq">
-            <div class="esquerda">
-                <form>
-                    <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto___" ></textarea>
-                        <span class="alert">
-                            <img src="assets/warning.svg" class="img-alerta">
-                            Apenas letras minúsculas e sem acento.
-                        </span>
-                        <div class="botao">
-                            <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
-                            <button class="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
-                        </div>
-                </form>   
-            </div>
-        </section>
+        <header>
+            <img class="logo_alura" src="assets/alura_logo.svg" alt="Logotipo Alura letra A">
+        </header>
 
-        <section class="main_container_dir">
-            <div class="mensagem">
-                <div class="sem_retorno">
-                    <img src="assets/message.svg" id="mensagem_nao_encontrada" alt="Nenhuma mensagem encontrada">
-                    <h3 class="titulo_nao_retorno">Nenhuma mensagem encontrada</h3>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-                </div>
-                <div class="texto_cripto">
-                    <button class="copiar" onclick="copiarTexto()">Copiar</button>
-                    <button class="colar"  onclick="copiedText()" >Colar</button> 
-                </div>
-            </div>   
-        </section>
-    </main>
+        <main class="main">
+            
+            <section class="text_session">
+                <form action="">
+                    <textarea class="text-input" type="text" name="input-texto" maxlength="120" id="input-texto" placeholder=" Digite seu texto..."></textarea>
+                    <div class="alerta">
+                        <img src="assets/alert.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada">
+                        <span>Apenas letras minúsculas e sem acento.</span>
+                      </div>
+                      <div class="botoes">
+                        <button type="submit" class="btn-criptografar" onclick="btnEncriptar()">Criptografar</button>
+                        <button type="submit" class="btn-descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                      </div>
+                </form>  
+            </section>
 
-    <footer class="footer">
+            <section class="no_text">
+                
+                    <div id="div-desaparece" class="message-box-div">
+                        <img src="assets/looking.svg" id="mensagem_nao_encontrada" alt="Nenhuma mensagem encontrada">
+                        <h3 class="titulo_nao_retorno">Nenhuma mensagem encontrada</h3>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
+                    <div class="div_aparece">
+                        <p></p>
+                        <button type="submit" class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
+                         
+            </section>
+        </main>
+
+        <footer>
         
             <a target="_blank" href="https://www.linkedin.com/in/priscila-nakayma">
                 <img src="assets/linkedin_logo.svg" class="logo_link" alt="linkedin">
@@ -56,18 +56,15 @@
                 <img src="assets/github_logo.svg" class="logo_link" alt="github">
             </a>
             
-            <span class="footer__texto">
-                Desenvolvido por
-                <img  src="assets/heart-filled.svg" class="logo_link" alt="heart">
-                Priscila Nakayama 
-            </span>
+            <p class="copyright">&copy;
+            Desenvolvido por <img  src="assets/black_heart.svg" class="logo_heart" alt="heart">
+            Priscila Nakayama 
+            </p>
     </footer>
 
-    <script src="app/criptografa-e-descriptografa.js"></script>
-    <script src="app/criptografo.js"></script>
-    <script src="app/copiar.js"></script>
-    <script src="app/text-area.js"></script>
-    <script src="app/app.js"></script>
+    <script src="app/script.js"></script>
 </body>
 
 </html>
+
+  
